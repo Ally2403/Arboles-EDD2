@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class ABB {
+public class ABB{
     Node root;
 
     //CREACIÓN DEL ÁRBOL

@@ -1,8 +1,53 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
-        ABB myAbb = new ABB();
+        ABB2 myAbb = new ABB2();
+        myAbb. generateABB(10);
+        myAbb. generateABB(4);
+        myAbb. generateABB(6);
+        myAbb. generateABB(12);
+        myAbb. generateABB(20);
+        myAbb. generateABB(14);
+        myAbb. generateABB(425);
+        myAbb. generateABB(90);
+        myAbb. generateABB(19);
+        myAbb. generateABB(1);
+        myAbb. generateABB(22);
+
+        myAbb.preOrderR(myAbb.root);
+        System.out.println();
+        System.out.println("Eliminando el 4");
+        myAbb.delete(4);
+        System.out.println("preorder resultante");
+        myAbb.preOrderR(myAbb.root);
+        System.out.println();
+        System.out.println("Buscando el 4");
+        if(myAbb.searchABB(myAbb.root, 4) != null){
+            System.out.println("El elemento 4 está");
+        }else{
+            System.out.println("El elemento 4 no está");
+        }
+
+        System.out.println("Árbol AVL");
+        AVL myAvl = new AVL();
+        myAvl. generateABB(10);
+        myAvl. generateABB(4);
+        myAvl. generateABB(6);
+        myAvl. generateABB(12);
+        myAvl. generateABB(20);
+        myAvl. generateABB(14);
+        myAvl. generateABB(425);
+        myAvl. generateABB(90);
+        myAvl. generateABB(19);
+        myAvl. generateABB(1);
+        myAvl. generateABB(22);
+
+        myAvl.preOrderR(myAvl.root);
+
+
+
         //Generando el árbol
+        /*ABB myAbb = new ABB();
         myAbb.generateABB(15);
         myAbb.generateABB(5);
         myAbb.generateABB(3);
@@ -125,6 +170,8 @@ public class App {
         }else{
             System.out.println("No tienen dos elementos en común");
         }
+        */
+
 
         /*
         //Buscando un elemento
